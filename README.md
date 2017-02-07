@@ -1,2 +1,1 @@
-# computer-literacy-class
-Materials for a computer literacy class
+# Computer Literacy Class
