@@ -3,11 +3,20 @@
 <%block name='title_block'>CMAA Computer Literacy Course</%block>
 
 <header>
-  <h1>Chinese Mutual Aid Association<br>Computer Literacy Course</h1>
+  <h1>Computer Literacy Course</h1>
+  <p>
+    Brought to you by the <a href='http://chinesemutualaid.org'>Chinese Mutual Aid Association</a>
+  </p>
 </header>
 
 <main>
-  % for i in range(100):
-    <p>Hello there</p>
-  % endfor
+  <h3>Classes</h3>
+
+  <ul>
+    % for i in range(1, 5):
+    <li>
+      <a href='/lesson-${i}'>Lesson ${i}</a>
+    </li>
+    % endfor
+  </ul>
 </main>

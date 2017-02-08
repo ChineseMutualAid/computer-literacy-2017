@@ -47,7 +47,11 @@ def publish(ctx):
 def render(template_file, **kwargs):
     kwargs.update(
         PATH=site / template_file,
-        markdown=markdown2.markdown
+        render_markdown_file=render_markdown_file,
     )
     tmpl = lookup.get_template(str(template_file))
     return tmpl.render(**kwargs)
+
+
+def render_markdown_file(markdown_file):
+    return markdown2.markdown(markdown_file.read_text())
