@@ -20,7 +20,7 @@ https://github.com/feihong/computer-literacy-class
 ---
 # Turning on the computer
 
-- Power switch is on the back of the computer
+- **Power switch** is on the back of the computer
 - Look for it near the bottom
 - Press it once to turn the computer on or off
 
