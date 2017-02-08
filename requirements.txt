@@ -2,3 +2,4 @@ Flask
 Invoke
 Mako
 markdown2
+requests

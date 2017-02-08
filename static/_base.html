@@ -7,17 +7,23 @@
 <meta name='description' content=''>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='/styles/global.css'>
-<%block name='extrahead'></%block>
+<link rel='stylesheet' href='/css/global.css'>
+<%block name='extrastyle'></%block>
 </head>
 <body class='container'>
-${next.body()}
 
+<main>
+${next.body()}
+</main>
+
+<%block name='footer'>
 <footer>
 This site is open source. Content licensed under <a rel='license' href='https://creativecommons.org/publicdomain/zero/1.0/'>Creative Commons Zero 1.0</a>.
 </footer>
+</%block>
 
 <script src='http://code.jquery.com/jquery-3.1.1.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<%block name='extrascript'></%block>
 </body>
 </html>

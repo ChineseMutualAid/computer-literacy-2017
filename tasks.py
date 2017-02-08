@@ -4,7 +4,7 @@ from flask import Flask, send_from_directory
 from invoke import task
 from mako.lookup import TemplateLookup
 import markdown2
-
+import requests
 
 app = Flask(__name__)
 site = Path('static')
@@ -31,6 +31,27 @@ def catch_all(path):
 @task
 def serve(ctx):
     app.run(port=8000, debug=True)
+
+
+DOWNLOAD_FILES = """
+https://raw.githubusercontent.com/hakimel/reveal.js/master/css/reveal.css
+https://raw.githubusercontent.com/hakimel/reveal.js/master/css/theme/black.css
+https://raw.githubusercontent.com/hakimel/reveal.js/master/js/reveal.js
+""".strip().splitlines()
+
+@task
+def download_dependencies(ctx):
+    for url in DOWNLOAD_FILES:
+        print(url)
+        filename = url.rsplit('/', 1)[1]
+
+        if url.endswith('.css'):
+            output_file = site / 'css' / filename
+        else:
+            output_file = site / 'js' / filename
+
+        with output_file.open('w') as fp:
+            fp.write(requests.get(url).text)
 
 
 @task

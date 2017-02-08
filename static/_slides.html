@@ -1,0 +1,22 @@
+<%inherit file='_base.html'/>
+
+<%block name='extrastyle'>
+<link rel='stylesheet' href='/css/reveal.css'>
+<link rel='stylesheet' href='/css/black.css' id='theme'>
+</%block>
+
+<%block name='footer'></%block>
+
+<%block name='extrascript'>
+<script src='/js/reveal.js'></script>
+<script>
+  Reveal.initialize();
+</script>
+</%block>
+
+<div class="reveal">
+  <div class="slides">
+    <section>Slide 1</section>
+    <section>Slide 2</section>
+  </div>
+</div>

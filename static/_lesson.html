@@ -1,5 +1,18 @@
 <%inherit file='_base.html'/>
 
-<main>
-  ${render_markdown_file(PATH.parent / 'slides.md')}
-</main>
+<%block name='extrahead'>
+<style>
+.nav {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+</style>
+</%block>
+
+<div class='nav'>
+  <a href='/'>Home</a>
+  |
+  <a href='slides/'>View slideshow</a>
+</div>
+
+${render_markdown_file(PATH.parent / 'slides.md')}
