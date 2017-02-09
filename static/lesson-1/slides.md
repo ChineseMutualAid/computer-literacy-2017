@@ -5,7 +5,7 @@ Chinese Mutual Aid Association
 ---
 # This class has a website
 
-https://ChineseMutualAid.github.io/computer-literacy
+[https://ChineseMutualAid.github.io/computer-literacy](https://ChineseMutualAid.github.io/computer-literacy)
 
 ---
 # Summary
