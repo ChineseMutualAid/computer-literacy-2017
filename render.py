@@ -21,14 +21,17 @@ def render_template(template_file, **kwargs):
     return tmpl.render(**kwargs)
 
 
+def render_markdown(text):
+    return markdown2.markdown(
+        replace_h1(text))
+
+
 def render_markdown_file(markdown_file):
-    return markdown2.markdown(markdown_file.read_text())
+    return render_markdown(markdown_file.read_text())
 
 
 def render_slides(markdown_file):
-    text = markdown_file.read_text()
-    text = replace_h1(text)
-    html = markdown2.markdown(text)
+    html = render_markdown_file(markdown_file)
     html = html.replace('<hr />', '</section>\n<section>')
     return '<section>\n{}\n</section>'.format(html)
 
