@@ -7,6 +7,8 @@ Chinese Mutual Aid Association
 
 [https://ChineseMutualAid.github.io/computer-literacy](https://ChineseMutualAid.github.io/computer-literacy)
 
+Short URL: [http://bit.ly/2kUO30C](http://bit.ly/2kUO30C)
+
 ---
 # Summary
 

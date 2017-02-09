@@ -4,7 +4,7 @@ from pathlib import Path
 from mako.lookup import TemplateLookup
 import markdown2
 
-from common import site_dir
+from common import site_dir, site_root
 
 
 lookup = TemplateLookup(directories=[str(site_dir)], strict_undefined=True)
@@ -12,6 +12,7 @@ lookup = TemplateLookup(directories=[str(site_dir)], strict_undefined=True)
 
 def render_template(template_file, **kwargs):
     kwargs.update(
+        ROOT=site_root,
         PATH=site_dir / template_file,
         render_markdown_file=render_markdown_file,
         render_slides=render_slides,

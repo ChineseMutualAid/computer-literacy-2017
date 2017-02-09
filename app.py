@@ -1,13 +1,19 @@
-from flask import Flask, send_from_directory
+from flask import Flask, redirect, send_from_directory
 
-from common import site_dir, build_dir
+from common import site_dir, build_dir, site_root
 from render import render_template
 
 
 app = Flask(__name__)
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
+
+@app.route('/')
+def redirect_to_site_root():
+    return redirect(site_root + '/')
+
+
+@app.route(site_root + '/', defaults={'path': ''})
+@app.route(site_root + '/<path:path>')
 def catch_all(path):
     filepath = site_dir / path
 
