@@ -15,9 +15,9 @@ Chinese Mutual Aid Association
 ---
 # Turning on the computer
 
-- **Power switch** is on the back of the computer
+- The **power switch** is on the back of the computer
 - Look for it near the bottom
-- Press it once to turn the computer on or off
+- Press it once to turn the computer on
 
 ---
 # Adjusting the volume
@@ -27,9 +27,9 @@ todo
 ---
 # Open a web browser
 
-From the bottom dock, select Google Chrome.
+From the **dock** at the bottom of the screen, select Google Chrome.
 
-If you're not sure how to do this, ask the instructor to do it for you.
+If you don't know how to do this, ask the instructor to do it for you.
 
 ---
 # Visit this course's website
@@ -72,5 +72,9 @@ todo
 ---
 # What do you want to get out of this course?
 
+Please let us know so we can make it work for you!
+
 ---
 # Questions?
+
+Don't be afraid to ask a question! Your instructor and your fellow students are here to help you!
