@@ -1,11 +1,11 @@
 # Computer Literacy Lesson 1
 
-## Chinese Mutual Aid Association
+Chinese Mutual Aid Association
 
 ---
 # This class has a website
 
-https://ChineseMutualAidAssociation.github.io/computer-literacy
+https://ChineseMutualAid.github.io/computer-literacy
 
 ---
 # Summary
