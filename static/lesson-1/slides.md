@@ -3,21 +3,14 @@
 Chinese Mutual Aid Association
 
 ---
-# This class has a website
-
-[https://ChineseMutualAid.github.io/computer-literacy](https://ChineseMutualAid.github.io/computer-literacy)
-
-Short URL: [http://bit.ly/2kUO30C](http://bit.ly/2kUO30C)
-
----
 # Summary
 
-- Turning on the computer
-- Adjusting the volume
-- Using the mouse
-- Using the keyboard
-- Using a web browser
-- Signing up for an email account
+- Turn on the computer
+- Adjust the volume
+- Visit this course's website
+- Practice using the mouse
+- Practice using the keyboard
+- The web browser
 
 ---
 # Turning on the computer
@@ -29,17 +22,55 @@ Short URL: [http://bit.ly/2kUO30C](http://bit.ly/2kUO30C)
 ---
 # Adjusting the volume
 
+todo
+
+---
+# Open a web browser
+
+From the bottom dock, select Google Chrome.
+
+If you're not sure how to do this, ask the instructor to do it for you.
+
+---
+# Visit this course's website
+
+Click on the topmost box in Google Chrome, type the following and then press Enter:
+
+### bit.ly/2kUO30C
+
+Click on "Lesson 1" to view the web page for this lesson
+
+---
+# Basic navigation of a web page
+
+- Press the ↑ and ↓ to scroll the page
+- If you see text that is blue, you click on it to open another web page
+- Now you can follow along with the slides
+
 ---
 # Using the mouse
 
-[Start computer mouse exercises](http://www.seniornet.org/howto/mouseexercises/placemouse1.html)
+[Start mouse exercises](http://www.seniornet.org/howto/mouseexercises/placemouse1.html)
 
 ---
 # Using the keyboard
 
-[Start computer keyboard exercises](http://www.bbc.co.uk/guides/z3c6tfr)
+[Start keyboard exercises](http://www.bbc.co.uk/guides/z3c6tfr)
 
 ---
 # Using a web browser
 
-- There are many web browsers
+- There are many web browsers, but the one we will focus on in this class is Google Chrome
+- Chrome is free and easy to install
+- Chrome works on all computers as well as all smartphones
+
+---
+# Using bookmarks in the browser
+
+todo
+
+---
+# What do you want to get out of this course?
+
+---
+# Questions?
