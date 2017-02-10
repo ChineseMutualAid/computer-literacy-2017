@@ -3,6 +3,11 @@
 <%block name='extrastyle'>
 <link rel='stylesheet' href='${ROOT}/css/reveal.css'>
 <link rel='stylesheet' href='${ROOT}/css/black.css' id='theme'>
+<style>
+.reveal .glyphicon {
+  font-family: 'Glyphicons Halflings';
+}
+</style>
 </%block>
 
 <%block name='footer'></%block>
@@ -10,10 +15,11 @@
 <%block name='extrascript'>
 <script src='${ROOT}/js/reveal.js'></script>
 <script>
-  Reveal.initialize();
+  Reveal.initialize()
+  Reveal.configure({slideNumber: 'c/t'})
 </script>
 </%block>
 
 <div class='reveal'>
-  ${render_slides(PATH.parent / 'slides.md')}  
+  ${render_slides(PATH.parent / 'slides.md')}
 </div>
