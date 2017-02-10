@@ -1,6 +1,6 @@
 # Computer Literacy Lesson 1
 
-Chinese Mutual Aid Association
+[Chinese Mutual Aid Association](http://chinesemutualaid.org)
 
 ---
 # What do you want to get out of this course?
@@ -8,16 +8,18 @@ Chinese Mutual Aid Association
 Please let us know so we can make it work for you!
 
 ---
-# You will have questions
+# Please ask questions!
 
-Don't be afraid to ask any question! Your instructor and your fellow students are here to help you!
+Don't be afraid to ask any question!
+
+Your instructor and your fellow students are here to help you!
 
 ---
 # Turning on the computer
 
-- The **power button** is on the back of the computer
-- Look for it near the bottom
-- Press it once to turn the computer on
+The **power button** is on the back of the computer. Press it once to turn the computer on.
+
+![Press the power button](power-button.jpg)
 
 ---
 # Logging into the computer
@@ -42,7 +44,7 @@ From the **dock** at the bottom of the screen, click on Google Chrome.
 ---
 # Visit this course's website
 
-Click on the **address bar** in Google Chrome, type the following **URL**, and then press `Enter`:
+Click on the **address bar** in Google Chrome, type the following **URL**, and then press the `Return` key:
 
 [ChineseMutualAid.github.io/computer-literacy/](http://chinesemutualaid.github.io/computer-literacy/)
 

@@ -20,15 +20,6 @@ hr {
 </style>
 </%block>
 
-<%block name='extrascript'>
-<script>
-$('body').on('click', 'a.external', function(evt) {
-  evt.preventDefault()
-  window.open(evt.target.href)
-})
-</script>
-</%block>
-
 <div class='nav'>
   <a href='${ROOT}/'>Home</a>
   |

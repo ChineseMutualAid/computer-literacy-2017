@@ -3,6 +3,8 @@ from pathlib import Path
 
 from mako.lookup import TemplateLookup
 import markdown2
+from pyquery import PyQuery
+from lxml import etree
 
 from common import site_dir, site_root
 
@@ -22,8 +24,17 @@ def render_template(template_file, **kwargs):
 
 
 def render_markdown(text):
-    return markdown2.markdown(
-        replace_h1(text))
+    text = replace_h1(text)
+    html = markdown2.markdown(text)
+    doc = PyQuery(html)
+
+    for link in doc('a.external'):
+        link.attrib['target'] = '_blank'
+
+    for img in doc('img'):
+        img.attrib['class'] = 'img-responsive'
+
+    return etree.tostring(doc[0], method='html').decode('utf-8')
 
 
 def render_markdown_file(markdown_file):
