@@ -9,6 +9,9 @@
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet' href='/computer-literacy/css/global.css'>
 
+<link rel='stylesheet' href='/computer-literacy/css/reveal.css'>
+<link rel='stylesheet' href='/computer-literacy/css/black.css' id='theme'>
+
 </head>
 <body class='container'>
 
@@ -16,51 +19,34 @@
 
 
 
-<style>
-.nav {
-  margin: 1rem 0;
-  font-size: 1.5rem;
-}
-img {
-  border: 1px solid gray;
-}
-hr {
-  border: 2px dashed gray;
-  margin: 4rem 0;
-}
-.slides {
-  margin-bottom: 5rem;
-  font-size: 2rem;
-}
-</style>
 
 
 
 
-<div class='nav'>
-  <a href='/computer-literacy/'>Home</a>
-  |
-  <a href='slides.html'>View slideshow</a>
-</div>
 
-<div class='slides'>
+<div class='reveal'>
+  <div class='slides'>
+    <section>
 <h1>Computer Literacy Lesson 1</h1>
 
 <p>Chinese Mutual Aid Association</p>
 
-<hr />
+</section>
+<section>
 
 <h2>What do you want to get out of this course?</h2>
 
 <p>Please let us know so we can make it work for you!</p>
 
-<hr />
+</section>
+<section>
 
 <h2>You will have questions</h2>
 
 <p>Don't be afraid to ask any question! Your instructor and your fellow students are here to help you!</p>
 
-<hr />
+</section>
+<section>
 
 <h2>Turning on the computer</h2>
 
@@ -70,7 +56,8 @@ hr {
 <li>Press it once to turn the computer on</li>
 </ul>
 
-<hr />
+</section>
+<section>
 
 <h2>Logging into the computer</h2>
 
@@ -79,7 +66,8 @@ hr {
 <li>Ask the instructor for the password</li>
 </ul>
 
-<hr />
+</section>
+<section>
 
 <h2>Adjusting the volume</h2>
 
@@ -87,7 +75,8 @@ hr {
 
 <p><img src="keyboard.jpg" alt="keyboard" /></p>
 
-<hr />
+</section>
+<section>
 
 <h2>Open a web browser</h2>
 
@@ -95,7 +84,8 @@ hr {
 
 <p><img src="google-chrome.png" alt="Google Chrome" /></p>
 
-<hr />
+</section>
+<section>
 
 <h2>Visit this course's website</h2>
 
@@ -105,13 +95,15 @@ hr {
 
 <p><img src="url-bar.png" alt="Type the URL" /></p>
 
-<hr />
+</section>
+<section>
 
 <h2>Go to Lesson 1</h2>
 
 <p>Click on <a href="http://localhost:8000/computer-literacy/lesson-1/">Lesson 1</a> to view the web page for this lesson</p>
 
-<hr />
+</section>
+<section>
 
 <h2>Basic navigation of a web page</h2>
 
@@ -121,7 +113,8 @@ hr {
 <li>Now you can follow along with the slides</li>
 </ul>
 
-<hr />
+</section>
+<section>
 
 <h2>Using the mouse</h2>
 
@@ -129,7 +122,8 @@ hr {
 
 <p>If you already feel comfortable using the mouse, then you can skip these exercises.</p>
 
-<hr />
+</section>
+<section>
 
 <h2>Using the keyboard</h2>
 
@@ -137,7 +131,8 @@ hr {
 
 <p>Try to complete <a href="http://play.bbc.co.uk/play/pen/g8s4pb547b">Level 1</a> of Dance Mat Typing.</p>
 
-<hr />
+</section>
+<section>
 
 <h2>Using bookmarks in the browser</h2>
 
@@ -145,7 +140,8 @@ hr {
 
 <p>There are a few steps to this process.</p>
 
-<hr />
+</section>
+<section>
 
 <h2>Show the bookmarks bar</h2>
 
@@ -153,7 +149,8 @@ hr {
 
 <p><img src="show-bookmarks.png" alt="Show bookmarks bar" /></p>
 
-<hr />
+</section>
+<section>
 
 <h2>Create a bookmark</h2>
 
@@ -161,7 +158,8 @@ hr {
 
 <p><img src="bookmark-star.png" alt="Click star" /></p>
 
-<hr />
+</section>
+<section>
 
 <h2>Click the newly-created bookmark</h2>
 
@@ -169,7 +167,8 @@ hr {
 
 <p><img src="click-bookmark.png" alt="Click the bookmark" /></p>
 
-<hr />
+</section>
+<section>
 
 <h2>Homework assignment #1</h2>
 
@@ -182,30 +181,27 @@ hr {
 
 <p>You can even make bookmarks on your smartphone! (Although the process is a little bit different.)</p>
 
-<hr />
+</section>
+<section>
 
 <h2>The End</h2>
 
 <p>Yay! You completed the first lesson!</p>
 
+</section>
+  </div>
 </div>
 
 </main>
 
 
-<footer>
-This site is open source. Content licensed under <a rel='license' href='https://creativecommons.org/publicdomain/zero/1.0/'>Creative Commons Zero 1.0</a>.
-</footer>
-
 
 <script src='http://code.jquery.com/jquery-3.1.1.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
+<script src='/computer-literacy/js/reveal.js'></script>
 <script>
-$('body').on('click', 'a.external', function(evt) {
-  evt.preventDefault()
-  window.open(evt.target.href)
-})
+  Reveal.initialize();
 </script>
 
 </body>
