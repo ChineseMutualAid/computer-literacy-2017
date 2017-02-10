@@ -31,9 +31,6 @@ def render_markdown(text):
     for link in doc('a.external'):
         link.attrib['target'] = '_blank'
 
-    for img in doc('img'):
-        img.attrib['class'] = 'img-responsive'
-
     return etree.tostring(doc[0], method='html').decode('utf-8')
 
 
@@ -43,7 +40,7 @@ def render_markdown_file(markdown_file):
 
 def render_slides(markdown_file):
     html = render_markdown_file(markdown_file)
-    html = html.replace('<hr />', '</section>\n<section>')
+    html = html.replace('<hr>', '</section>\n<section>')
     return '<section>\n{}\n</section>'.format(html)
 
 
