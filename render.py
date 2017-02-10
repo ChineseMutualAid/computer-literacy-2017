@@ -27,11 +27,10 @@ def render_markdown(text):
     text = replace_h1(text)
     html = markdown2.markdown(text)
     doc = PyQuery(html)
-
     for link in doc('a.external'):
-        link.attrib['target'] = '_blank'
+        link.set('target', '_blank')
 
-    return etree.tostring(doc[0], method='html').decode('utf-8')
+    return doc_to_string(doc)
 
 
 def render_markdown_file(markdown_file):
@@ -40,8 +39,21 @@ def render_markdown_file(markdown_file):
 
 def render_slides(markdown_file):
     html = render_markdown_file(markdown_file)
+    html = html[5:-6]       # get rid of enclosing div
     html = html.replace('<hr>', '</section>\n<section>')
-    return '<section>\n{}\n</section>'.format(html)
+    html = '<div class="slides"><section>\n{}\n</section></div>'.format(html)
+
+    doc = PyQuery(html)
+
+    # Make sure that images are scaled correctly inside slides. That only can
+    # only happen if img elements are not children of p elements.
+    for img in doc('img'):
+        img.attrib['class'] = 'stretch'
+        parent = img.getparent()
+        if parent.tag == 'p':
+            parent.getparent().replace(parent, img)
+
+    return doc_to_string(doc)
 
 
 def replace_h1(text):
@@ -63,3 +75,7 @@ def replace_h1(text):
             yield line
 
     return '\n'.join(gen())
+
+
+def doc_to_string(doc):
+    return etree.tostring(doc[0], encoding='unicode', method='html')
