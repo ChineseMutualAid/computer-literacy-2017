@@ -4,13 +4,20 @@
 <meta charset='utf-8'>
 <meta http-equiv='x-ua-compatible' content='ie=edge'>
 <title>Computer Literacy Lesson 1</title>
-<meta name='description' content=''>
+<meta name='description' content='CMAA computer literacy course'>
+<link rel="shortcut icon" href="/computer-literacy/favicon.jpg" type="image/jpeg">
+<link rel="apple-touch-icon" href="/computer-literacy/favicon.jpg" type="image/jpeg">
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet' href='/computer-literacy/css/global.css'>
 
 <link rel='stylesheet' href='/computer-literacy/css/reveal.css'>
 <link rel='stylesheet' href='/computer-literacy/css/black.css' id='theme'>
+<style>
+.reveal .glyphicon {
+  font-family: 'Glyphicons Halflings';
+}
+</style>
 
 </head>
 <body class='container'>
@@ -25,11 +32,10 @@
 
 
 <div class='reveal'>
-  <div class='slides'>
-    <section>
+  <div class="slides"><section>
 <h1>Computer Literacy Lesson 1</h1>
 
-<p>Chinese Mutual Aid Association</p>
+<p><a href="http://chinesemutualaid.org">Chinese Mutual Aid Association</a></p>
 
 </section>
 <section>
@@ -41,22 +47,20 @@
 </section>
 <section>
 
-<h2>You will have questions</h2>
+<h2>Please ask questions!</h2>
 
-<p>Don't be afraid to ask any question! Your instructor and your fellow students are here to help you!</p>
+<p>Don't be afraid to ask any question!</p>
+
+<p>Your instructor and your fellow students are here to help you!</p>
 
 </section>
 <section>
 
 <h2>Turning on the computer</h2>
 
-<ul>
-<li>The <strong>power button</strong> is on the back of the computer</li>
-<li>Look for it near the bottom</li>
-<li>Press it once to turn the computer on</li>
-</ul>
+<p>The <strong>power button</strong> is on the back of the computer. Press it once to turn the computer on.</p>
 
-</section>
+<img src="power-button.jpg" alt="Press the power button" class="stretch"></section>
 <section>
 
 <h2>Logging into the computer</h2>
@@ -73,29 +77,23 @@
 
 <p>Press <span class="glyphicon glyphicon-volume-down"></span> and <span class="glyphicon glyphicon-volume-up"></span> to adjust the volume.</p>
 
-<p><img src="keyboard.jpg" alt="keyboard" /></p>
-
-</section>
+<img src="keyboard.jpg" alt="keyboard" class="stretch"></section>
 <section>
 
 <h2>Open a web browser</h2>
 
 <p>From the <strong>dock</strong> at the bottom of the screen, click on Google Chrome.</p>
 
-<p><img src="google-chrome.png" alt="Google Chrome" /></p>
-
-</section>
+<img src="google-chrome.png" alt="Google Chrome" class="stretch"></section>
 <section>
 
 <h2>Visit this course's website</h2>
 
-<p>Click on the <strong>address bar</strong> in Google Chrome, type the following <strong>URL</strong>, and then press <code>Enter</code>:</p>
+<p>Click on the <strong>address bar</strong> in Google Chrome, type the following <strong>URL</strong>, and then press the <code>Return</code> key:</p>
 
 <p><a href="http://chinesemutualaid.github.io/computer-literacy/">ChineseMutualAid.github.io/computer-literacy/</a></p>
 
-<p><img src="url-bar.png" alt="Type the URL" /></p>
-
-</section>
+<img src="url-bar.png" alt="Type the URL" class="stretch"></section>
 <section>
 
 <h2>Go to Lesson 1</h2>
@@ -118,7 +116,7 @@
 
 <h2>Using the mouse</h2>
 
-<p><a href='http://www.seniornet.org/howto/mouseexercises/placemouse1.html' class='external'>Start mouse exercises</a></p>
+<p><a href="http://www.seniornet.org/howto/mouseexercises/placemouse1.html" class="external" target="_blank">Start mouse exercises</a></p>
 
 <p>If you already feel comfortable using the mouse, then you can skip these exercises.</p>
 
@@ -127,7 +125,7 @@
 
 <h2>Using the keyboard</h2>
 
-<p><a href='http://www.bbc.co.uk/guides/z3c6tfr' class='external'>Start keyboard exercises</a></p>
+<p><a href="http://www.bbc.co.uk/guides/z3c6tfr" class="external" target="_blank">Start keyboard exercises</a></p>
 
 <p>Try to complete <a href="http://play.bbc.co.uk/play/pen/g8s4pb547b">Level 1</a> of Dance Mat Typing.</p>
 
@@ -147,27 +145,21 @@
 
 <p>Click <span class="glyphicon glyphicon-option-vertical"></span> in the upper right, then <code>Bookmarks</code>, and finally <code>Show Bookmarks Bar</code>.</p>
 
-<p><img src="show-bookmarks.png" alt="Show bookmarks bar" /></p>
-
-</section>
+<img src="show-bookmarks.png" alt="Show bookmarks bar" class="stretch"></section>
 <section>
 
 <h2>Create a bookmark</h2>
 
 <p>Click <span class="glyphicon glyphicon-star"></span> in the upper right, then <code>Done</code>.</p>
 
-<p><img src="bookmark-star.png" alt="Click star" /></p>
-
-</section>
+<img src="bookmark-star.png" alt="Click star" class="stretch"></section>
 <section>
 
 <h2>Click the newly-created bookmark</h2>
 
 <p>The bookmark will appear in the <strong>bookmark bar</strong>. Create an empty tab and click the bookmark to prove it works.</p>
 
-<p><img src="click-bookmark.png" alt="Click the bookmark" /></p>
-
-</section>
+<img src="click-bookmark.png" alt="Click the bookmark" class="stretch"></section>
 <section>
 
 <h2>Homework assignment #1</h2>
@@ -188,8 +180,7 @@
 
 <p>Yay! You completed the first lesson!</p>
 
-</section>
-  </div>
+</section></div>
 </div>
 
 </main>
@@ -201,7 +192,8 @@
 
 <script src='/computer-literacy/js/reveal.js'></script>
 <script>
-  Reveal.initialize();
+  Reveal.initialize()
+  Reveal.configure({slideNumber: 'c/t'})
 </script>
 
 </body>
