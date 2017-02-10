@@ -22,6 +22,9 @@ def catch_all(path):
         if index_path.exists():
             return render_template(index_path.relative_to(site_dir))
 
+    if filepath.suffix == '.html':
+        return render_template(filepath.relative_to(site_dir))
+
     if filepath.exists():
         return send_from_directory(str(site_dir), path)
 
