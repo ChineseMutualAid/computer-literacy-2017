@@ -2,17 +2,32 @@
 
 <%block name='title_block'>CMAA Computer Literacy Course</%block>
 
-<h1>Computer Literacy Course</h1>
-<p>
-  Brought to you by the <a href='http://chinesemutualaid.org'>Chinese Mutual Aid Association</a>
-</p>
+<%block name='extrastyle'>
+<style>
+img {
+  height: 12rem;
+  margin-right: 1rem;
+}
+main {
+  font-size: 2rem;
+}
+</style>
+</%block>
 
-<h3>Classes</h3>
+<main>
+  <h1>Computer Literacy Course</h1>
+  <p class='frontmatter'>
+    <img src='logo.gif'>
+    Brought to you by <a href='http://chinesemutualaid.org'>Chinese Mutual Aid Association</a>
+  </p>
 
-<ul>
-  % for i in range(1, 5):
-  <li>
-    <a href='lesson-${i}/'>Lesson ${i}</a>
-  </li>
-  % endfor
-</ul>
+  <h2>Lessons</h2>
+
+  <ul>
+    % for i in range(1, 5):
+    <li>
+      <a href='lesson-${i}/'>Lesson ${i}</a>
+    </li>
+    % endfor
+  </ul>
+</main>
