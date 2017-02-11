@@ -1,11 +1,14 @@
 <%inherit file='_base.html'/>
 
 <%block name='extrastyle'>
-<link rel='stylesheet' href='${ROOT}/css/reveal.css'>
-<link rel='stylesheet' href='${ROOT}/css/black.css' id='theme'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/reveal.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/black.min.css' id='theme'>
 <style>
 .reveal .glyphicon {
   font-family: 'Glyphicons Halflings';
+}
+.slides img:hover {
+  cursor: zoom-in;
 }
 </style>
 </%block>
@@ -13,7 +16,7 @@
 <%block name='footer'></%block>
 
 <%block name='extrascript'>
-<script src='${ROOT}/js/reveal.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/js/reveal.min.js'></script>
 <script>
   Reveal.initialize()
   Reveal.configure({slideNumber: 'c/t'})
