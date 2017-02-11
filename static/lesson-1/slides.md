@@ -19,7 +19,7 @@ Your instructor and your fellow students are here to help you!
 
 The **power button** is on the back of the computer. Press it once to turn the computer on.
 
-![Press the power button](power-button.jpg)
+![Press the power button on the back](power-button.jpg)
 
 ---
 # Logging into the computer
@@ -32,14 +32,14 @@ The **power button** is on the back of the computer. Press it once to turn the c
 
 Press <span class="glyphicon glyphicon-volume-down"></span> and <span class="glyphicon glyphicon-volume-up"></span> to adjust the volume.
 
-![keyboard](keyboard.jpg)
+![Press the two volume keys](keyboard.jpg)
 
 ---
 # Open a web browser
 
 From the **dock** at the bottom of the screen, click on Google Chrome.
 
-![Google Chrome](google-chrome.png)
+![Click on Google Chrome in the dock](google-chrome.png)
 
 ---
 # Visit this course's website
@@ -48,7 +48,7 @@ Click on the **address bar** in Google Chrome, type the following **URL**, and t
 
 [ChineseMutualAid.github.io/computer-literacy/](http://chinesemutualaid.github.io/computer-literacy/)
 
-![Type the URL](url-bar.png)
+![Type the URL in the address bar](url-bar.png)
 
 ---
 # Go to Lesson 1
@@ -88,21 +88,21 @@ There are a few steps to this process.
 
 Click <span class="glyphicon glyphicon-option-vertical"></span> in the upper right, then `Bookmarks`, and finally `Show Bookmarks Bar`.
 
-![Show bookmarks bar](show-bookmarks.png)
+![Show the bookmarks bar](show-bookmarks.png)
 
 ---
 # Create a bookmark
 
 Click <span class="glyphicon glyphicon-star"></span> in the upper right, then `Done`.
 
-![Click star](bookmark-star.png)
+![Create a new bookmark](bookmark-star.png)
 
 ---
 # Click the newly-created bookmark
 
 The bookmark will appear in the **bookmark bar**. Create an empty tab and click the bookmark to prove it works.
 
-![Click the bookmark](click-bookmark.png)
+![Click the bookmark to go to the bookmarked site](click-bookmark.png)
 
 ---
 # Homework assignment #1

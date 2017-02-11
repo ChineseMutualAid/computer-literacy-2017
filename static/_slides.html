@@ -8,7 +8,7 @@
   font-family: 'Glyphicons Halflings';
 }
 .slides img:hover {
-  cursor: zoom-in;
+  cursor: pointer;
 }
 #image-modal img {
   border: 1px solid gray;
@@ -21,11 +21,8 @@
 <script>
 Reveal.initialize()
 Reveal.configure({slideNumber: 'c/t'})
-$(document).on('click', 'img', function(evt) {
-  let img = evt.target
-  $('#image-modal').modal()
-  $('#image-modal .modal-title').text(img.alt)
-  $('#image-modal img').attr('src', img.src)
+$(document).on('click', 'section img', function(evt) {
+  window.open(evt.target.src)
 })
 </script>
 </%block>
@@ -35,17 +32,3 @@ $(document).on('click', 'img', function(evt) {
 <div class='reveal'>
   ${render_slides(PATH.parent / 'slides.md')}
 </div>
-
-<div id="image-modal" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">?</h4>
-      </div>
-      <div class="modal-body">
-        <img class='img-responsive' src='?'>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
