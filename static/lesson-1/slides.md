@@ -3,9 +3,17 @@
 [Chinese Mutual Aid Association](http://chinesemutualaid.org)
 
 ---
-# What do you want to get out of this course?
+# Introduce yourself!
 
-Please let us know so we can make it work for you!
+- What is your name?
+- Where are you from?
+
+---
+# Survey questions
+
+- What do you hope to learn in this class?
+- Do you have a computer at home? If so, what kind?
+- Is there someone at home who helps you with computers?
 
 ---
 # Please ask questions!
@@ -53,14 +61,15 @@ Click on the **address bar** in Google Chrome, type the following **URL**, and t
 ---
 # Go to Lesson 1
 
-Click on [Lesson 1](http://localhost:8000/computer-literacy/lesson-1/) to view the web page for this lesson
+- Click on [Lesson 1](https://chinesemutualaid.github.io/computer-literacy/lesson-1/) to view the web page for this lesson.
+- Click on [View slideshow](https://chinesemutualaid.github.io/computer-literacy/lesson-1/slides.html) to view the slideshow for this lesson.
 
 ---
-# Basic navigation of a web page
+# Using the slideshow
 
-- Press ↑ and ↓ to scroll the page
-- If you see text that is [blue](https://google.com), you can click on it to open another web page
-- Now you can follow along with the slides
+- Press ← and → keys to move through the slides
+- The number of the slide is in the bottom right
+- Links are [blue](https://google.com), you can click on them to open another web page
 
 ---
 # Using the mouse
@@ -74,7 +83,7 @@ If you already feel comfortable using the mouse, then you can skip these exercis
 
 <a href='http://www.bbc.co.uk/guides/z3c6tfr' class='external'>Start keyboard exercises</a>
 
-Try to complete [Level 1](http://play.bbc.co.uk/play/pen/g8s4pb547b) of Dance Mat Typing.
+Try to complete [Level 1](http://play.bbc.co.uk/play/pen/g8s4pb547b) of Dance Mat Typing
 
 ---
 # Using bookmarks in the browser
@@ -86,14 +95,14 @@ There are a few steps to this process.
 ---
 # Show the bookmarks bar
 
-Click <span class="glyphicon glyphicon-option-vertical"></span> in the upper right, then `Bookmarks`, and finally `Show Bookmarks Bar`.
+Click <span class="glyphicon glyphicon-option-vertical"></span> in the upper right, then `Bookmarks`, and finally `Show Bookmarks Bar`
 
 ![Show the bookmarks bar](show-bookmarks.png)
 
 ---
 # Create a bookmark
 
-Click <span class="glyphicon glyphicon-star"></span> in the upper right, then `Done`.
+Click <span class="glyphicon glyphicon-star"></span> in the upper right, then `Done`
 
 ![Create a new bookmark](bookmark-star.png)
 

@@ -45,6 +45,10 @@ def render_slides(markdown_file):
 
     doc = PyQuery(html)
 
+    # All links in slideshow open a new tab.
+    for link in doc('a'):
+        link.set('target', '_blank')
+
     # Make sure that images are scaled correctly inside slides. That only can
     # only happen if img elements are not children of p elements.
     for img in doc('img'):
