@@ -1,5 +1,9 @@
 <%inherit file='_base.html'/>
 
+<%block name='title_block' filter='trim'>
+  ${doc('slides.md').title}
+</%block>
+
 <%block name='extrastyle'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/reveal.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/black.min.css' id='theme'>
@@ -30,5 +34,5 @@ $(document).on('click', 'section img', function(evt) {
 <%block name='footer'></%block>
 
 <div class='reveal'>
-  ${render_slides(PATH.parent / 'slides.md')}
+  ${doc('slides.md').get_slides_html()}
 </div>

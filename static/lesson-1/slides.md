@@ -56,7 +56,7 @@ Click on the **address bar** in Google Chrome, type the following **URL**, and t
 
 [ChineseMutualAid.github.io/computer-literacy/](http://chinesemutualaid.github.io/computer-literacy/)
 
-![Type the URL in the address bar](url-bar.png)
+![Type the URL in the address bar](address-bar.png)
 
 ---
 # Go to Lesson 1

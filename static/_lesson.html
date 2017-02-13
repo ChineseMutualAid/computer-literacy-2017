@@ -1,23 +1,27 @@
 <%inherit file='_base.html'/>
 
+<%block name='title_block' filter='trim'>
+  ${doc('slides.md').title}
+</%block>
+
 <%block name='extrahead'>
-<style>
-.nav {
-  margin: 1rem 0;
-  font-size: 1.5rem;
-}
-img {
-  border: 1px solid gray;
-}
-hr {
-  border: 2px dashed gray;
-  margin: 4rem 0;
-}
-.slides {
-  margin-bottom: 5rem;
-  font-size: 2rem;
-}
-</style>
+  <style>
+  .nav {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+  img {
+    border: 1px solid gray;
+  }
+  hr {
+    border: 2px dashed gray;
+    margin: 4rem 0;
+  }
+  .slides {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+  }
+  </style>
 </%block>
 
 <div class='nav'>
@@ -27,5 +31,5 @@ hr {
 </div>
 
 <div class='slides'>
-${render_markdown_file(PATH.parent / 'slides.md')}
+${doc('slides.md').get_lesson_html()}
 </div>
