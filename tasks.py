@@ -27,34 +27,6 @@ def serve_build(ctx):
     run('cd {} && python -m http.server'.format(build_dir))
 
 
-DOWNLOAD_FILES = """
-https://raw.githubusercontent.com/hakimel/reveal.js/master/css/reveal.css
-https://raw.githubusercontent.com/hakimel/reveal.js/master/css/theme/black.css
-https://raw.githubusercontent.com/hakimel/reveal.js/master/js/reveal.js
-""".strip().splitlines()
-
-@task
-def download_dependencies(ctx):
-    """
-    Download the source files needed for reveal.js. You only need to do this if
-    you want to upgrade to a newer version of reveal.js
-
-    """
-    import requests
-
-    for url in DOWNLOAD_FILES:
-        print(url)
-        filename = url.rsplit('/', 1)[1]
-
-        if url.endswith('.css'):
-            output_file = site_dir / 'css' / filename
-        else:
-            output_file = site_dir / 'js' / filename
-
-        with output_file.open('w') as fp:
-            fp.write(requests.get(url).text)
-
-
 @task
 def clean(ctx):
     """
@@ -91,7 +63,7 @@ def build(ctx):
         dest = build_dir / src.relative_to(site_dir)
         print(dest)
         if not dest.exists():
-            dest.parent.mkdir(parents=True, exist_ok=True)        
+            dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(str(src), str(dest))
 
 
