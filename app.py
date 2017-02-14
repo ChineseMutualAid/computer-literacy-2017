@@ -32,5 +32,5 @@ def static_files(path):
     filepath = site_dir / path
     if filepath.exists():
         return send_from_directory(str(site_dir), path)
-
-    return 'Page not found', 404
+    else:
+        return 'Page not found', 404

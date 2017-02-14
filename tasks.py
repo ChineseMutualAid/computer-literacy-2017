@@ -50,6 +50,7 @@ def build(ctx):
 
     client = app.test_client()
 
+    # Generate HTML files using Flask.
     for url in get_build_urls():
         dest = build_dir / Path(url).relative_to(site_root) / 'index.html'
         print(dest)
@@ -59,6 +60,7 @@ def build(ctx):
             data = client.get(url).data
             fp.write(data)
 
+    # Copy static files.
     for src in site_dir.rglob('*?.*'):
         dest = build_dir / src.relative_to(site_dir)
         print(dest)
@@ -82,7 +84,11 @@ def run(cmd):
 
 
 def get_build_urls():
+    """
+    Return a sequence of URLs to generate HTML files from.
+
+    """
     yield site_root
-    for i in range(1, 2):
+    for i in range(1, 3):
         yield '{}lesson-{}/'.format(site_root, i)
         yield '{}lesson-{}/slides/'.format(site_root, i)

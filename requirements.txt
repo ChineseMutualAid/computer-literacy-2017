@@ -3,4 +3,3 @@ Invoke
 Mako
 markdown2
 pyquery
-requests
