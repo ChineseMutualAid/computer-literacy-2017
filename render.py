@@ -6,31 +6,28 @@ import markdown2
 from pyquery import PyQuery
 from lxml import etree
 
-from common import site_dir, site_root
+from common import site_dir, template_dir, site_root
 
 
 lookup = TemplateLookup(
-    directories=[str(site_dir)],
+    directories=[str(template_dir)],
     strict_undefined=True,
 )
 
 
 def render_template(template_file, **kwargs):
-    template_path = site_dir / template_file
+    template_path = template_dir / template_file
     kwargs.update(
         ROOT=site_root,
         PATH=template_path,
-        doc=get_doc_function(template_path.parent)
     )
     tmpl = lookup.get_template(str(template_file))
     return tmpl.render(**kwargs)
 
 
-def get_doc_function(dir_path):
-    def result(filename):
-        return MarkdownDocument(dir_path / filename)
-
-    return result
+def get_doc(num):
+    md_file = site_dir / ('lesson-%d/slides.md' % num)
+    return MarkdownDocument(md_file)
 
 
 class MarkdownDocument:
@@ -68,6 +65,13 @@ class MarkdownDocument:
         html = '<div class="slides">\n<section>\n{}\n</section>\n</div>'.format(html)
 
         doc = PyQuery(html)
+
+        # All local images must have their src attributes reference files in the
+        # parent directory.
+        for img in doc('img'):
+            src = img.get('src')
+            if not src.startswith('http'):
+                img.set('src', '../' + src)
 
         # All links in slideshow open a new tab.
         for link in doc('a'):

@@ -1,7 +1,7 @@
-<%inherit file='_base.html'/>
+<%inherit file='base.html'/>
 
 <%block name='title_block' filter='trim'>
-  ${doc('slides.md').title}
+  ${doc.title}
 </%block>
 
 <%block name='extrahead'>
@@ -25,11 +25,11 @@
 </%block>
 
 <div class='nav'>
-  <a href='${ROOT}/'>Home</a>
+  <a href='${ROOT}'>Home</a>
   |
-  <a href='slides.html'>View slideshow</a>
+  <a href='slides/'>View slideshow</a>
 </div>
 
 <div class='slides'>
-${doc('slides.md').get_lesson_html()}
+${doc.get_lesson_html()}
 </div>

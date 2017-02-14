@@ -1,8 +1,11 @@
 import subprocess
+from pathlib import Path
+
 from invoke import task
 
-from common import site_dir, build_dir
+from common import site_dir, build_dir, site_root
 from render import render_template
+from app import app
 
 
 @task
@@ -12,7 +15,6 @@ def serve(ctx):
     changes without building.
 
     """
-    from app import app
     app.run(port=8000, debug=True)
 
 
@@ -70,13 +72,27 @@ def build(ctx):
     directory.
 
     """
+    import shutil
+
     clean(ctx)
+
+    client = app.test_client()
+    # import ipdb; ipdb.set_trace()
+    for url in get_build_urls():
+        dest = build_dir / Path(url).relative_to(site_root) / 'index.html'
+        print(dest)
+        if not dest.exists():
+            dest.parent.mkdir(parents=True, exist_ok=True)
+        with dest.open('wb') as fp:
+            data = client.get(url).data
+            fp.write(data)
+
     for src in site_dir.rglob('*?.*'):
-        name = src.name
-        if not (name.startswith('_') or name.endswith('.md')):
-            dest = build_dir / src.relative_to(site_dir)
-            print(dest)
-            copy_or_generate(src, dest)
+        dest = build_dir / src.relative_to(site_dir)
+        if not dest.exists():
+            dest.parent.mkdir(parents=True, exist_ok=True)
+        print(dest)
+        shutil.copy(str(src), str(dest))
 
 
 @task
@@ -93,17 +109,8 @@ def run(cmd):
     subprocess.call(cmd, shell=isinstance(cmd, str))
 
 
-def copy_or_generate(src, dest):
-    import shutil
-
-    if not dest.exists():
-        dest.parent.mkdir(parents=True, exist_ok=True)
-
-    if src.suffix == '.html':
-        with dest.open('w') as fp:
-            html = render_template(src.relative_to(site_dir))
-            fp.write(html)
-    else:
-        shutil.copy(str(src), str(dest))
-
-    return dest
+def get_build_urls():
+    yield site_root
+    for i in range(1, 2):
+        yield '{}lesson-{}/'.format(site_root, i)
+        yield '{}lesson-{}/slides/'.format(site_root, i)

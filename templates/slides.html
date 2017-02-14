@@ -1,7 +1,7 @@
-<%inherit file='_base.html'/>
+<%inherit file='base.html'/>
 
 <%block name='title_block' filter='trim'>
-  ${doc('slides.md').title}
+  ${doc.title}
 </%block>
 
 <%block name='extrastyle'>
@@ -34,5 +34,5 @@ $(document).on('click', 'section img', function(evt) {
 <%block name='footer'></%block>
 
 <div class='reveal'>
-  ${doc('slides.md').get_slides_html()}
+  ${doc.get_slides_html()}
 </div>
