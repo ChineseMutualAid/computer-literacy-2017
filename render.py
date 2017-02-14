@@ -58,6 +58,9 @@ class MarkdownDocument:
         for link in doc('a.external'):
             link.set('target', '_blank')
 
+        for img in doc('img'):
+            img.set('class', 'img-responsive')
+
         return doc_to_string(doc)
 
     def get_slides_html(self):

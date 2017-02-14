@@ -77,7 +77,7 @@ def build(ctx):
     clean(ctx)
 
     client = app.test_client()
-    # import ipdb; ipdb.set_trace()
+
     for url in get_build_urls():
         dest = build_dir / Path(url).relative_to(site_root) / 'index.html'
         print(dest)
@@ -89,9 +89,9 @@ def build(ctx):
 
     for src in site_dir.rglob('*?.*'):
         dest = build_dir / src.relative_to(site_dir)
-        if not dest.exists():
-            dest.parent.mkdir(parents=True, exist_ok=True)
         print(dest)
+        if not dest.exists():
+            dest.parent.mkdir(parents=True, exist_ok=True)        
         shutil.copy(str(src), str(dest))
 
 
