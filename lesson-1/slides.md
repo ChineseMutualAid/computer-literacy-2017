@@ -16,6 +16,14 @@
 - Is there someone at home who helps you with computers?
 
 ---
+
+# What you need to bring
+
+Paper for taking notes
+
+That's it! We provide the computers.
+
+---
 # Please ask questions!
 
 Don't be afraid to ask any question!
@@ -114,7 +122,7 @@ The bookmark will appear in the **bookmark bar**. Create an empty tab and click 
 ![Click the bookmark to go to the bookmarked site](click-bookmark.png)
 
 ---
-# Homework assignment #1
+# Homework assignment
 
 If you have a computer at home, create bookmarks for these two websites:
 
