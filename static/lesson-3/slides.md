@@ -7,7 +7,7 @@
 
 - Join Google Group (discussion forum)
 - Take screenshot so you can receive help
-
+- Make post about [free computer classes](http://ahschicago.org/education.html#tabs-2)
 
 ---
 # Homework assignment

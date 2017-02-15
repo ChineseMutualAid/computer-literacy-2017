@@ -89,6 +89,6 @@ def get_build_urls():
 
     """
     yield site_root
-    for i in range(1, 3):
+    for i in range(1, 5):
         yield '{}lesson-{}/'.format(site_root, i)
         yield '{}lesson-{}/slides/'.format(site_root, i)
