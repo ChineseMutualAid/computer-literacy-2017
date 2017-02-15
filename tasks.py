@@ -5,7 +5,7 @@ from invoke import task
 
 from common import site_dir, build_dir, site_root
 from render import render_template
-from app import app
+from app import app, get_build_urls
 
 
 @task
@@ -53,7 +53,7 @@ def build(ctx):
     # Generate HTML files using Flask.
     for url in get_build_urls():
         dest = build_dir / Path(url).relative_to(site_root) / 'index.html'
-        print(dest)
+        print('{} -> {}'.format(url, dest))
         if not dest.exists():
             dest.parent.mkdir(parents=True, exist_ok=True)
         with dest.open('wb') as fp:
@@ -63,6 +63,8 @@ def build(ctx):
     # Copy static files.
     for src in site_dir.rglob('*?.*'):
         dest = build_dir / src.relative_to(site_dir)
+        if dest.name.startswith('.'):
+            continue
         print(dest)
         if not dest.exists():
             dest.parent.mkdir(parents=True, exist_ok=True)
@@ -81,14 +83,3 @@ def publish(ctx):
 
 def run(cmd):
     subprocess.call(cmd, shell=isinstance(cmd, str))
-
-
-def get_build_urls():
-    """
-    Return a sequence of URLs to generate HTML files from.
-
-    """
-    yield site_root
-    for i in range(1, 5):
-        yield '{}lesson-{}/'.format(site_root, i)
-        yield '{}lesson-{}/slides/'.format(site_root, i)

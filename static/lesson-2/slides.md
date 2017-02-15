@@ -7,7 +7,7 @@
 
 - What do you hope to learn in this class?
 - Do you have a computer at home? If so, what kind?
-- Is there someone at home who helps you with computers?
+- Is there someone at home who can help you with computers?
 
 ---
 # Review exercises

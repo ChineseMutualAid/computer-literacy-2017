@@ -1,4 +1,4 @@
-from flask import Flask, redirect, send_from_directory
+from flask import Flask, redirect, send_from_directory, url_for
 
 from common import site_dir, build_dir, site_root
 from render import render_template, get_doc
@@ -34,3 +34,15 @@ def static_files(path):
         return send_from_directory(str(site_dir), path)
     else:
         return 'Page not found', 404
+
+
+def get_build_urls():
+    """
+    Return a sequence of URLs to generate HTML files from.
+
+    """
+    with app.test_request_context():
+        yield url_for('home')
+        for i in range(1, 5):
+            yield url_for('lesson', num=i)
+            yield url_for('slides', num=i)
