@@ -80,15 +80,6 @@ Before you leave, sign out of your Gmail account
 - Send more emails
 
 ---
-# Another free computer class
-
-Register on March 2 or March 3
-
-Class runs from March 6 to May 3
-
-[More information](computer-classes-march-2017.pdf)
-
----
 # The End
 
 Yay! You completed the second lesson!
