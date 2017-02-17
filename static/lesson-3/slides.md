@@ -3,12 +3,6 @@
 [Chinese Mutual Aid Association](http://chinesemutualaid.org)
 
 ---
-# Outline
-
-- Join Google Group (discussion forum)
-- Take screenshot so you can receive help
-
----
 # Review exercises
 
 - Send an email to a classmate
@@ -41,6 +35,13 @@ Send an email to:
 `cmaa-computer-literacy-course@googlegroup.com`
 
 Everyone subscribed to the mailing list will see your email!
+
+---
+# Don't forget to practice your typing!
+
+<a href='http://typing.com/student' class='external'>typing.com/student</a>
+
+You should already have a bookmark for this site
 
 ---
 # Another free computer class
