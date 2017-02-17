@@ -65,14 +65,19 @@ Fill out everything in the form, then click `Next step`
 - Reply to an email
 
 ---
-# Practice your typing
+# Sign out
 
-Click on your `typing.com` bookmark, and go through the exercises
+Before you leave, sign out of your Gmail account
+
+![Sign out of your Gmail  account](sign-out.png)
 
 ---
 # Homework assignment
 
-Send an email to cmaa1702@googlegroups.com
+- Go to `typing.com/student` and practice your typing
+- Sign in to your Gmail account
+- Sign out of your Gmail account
+- Send more emails
 
 ---
 # Another free computer class
