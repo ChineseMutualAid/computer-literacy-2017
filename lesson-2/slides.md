@@ -65,23 +65,19 @@ Fill out everything in the form, then click `Next step`
 - Reply to an email
 
 ---
-# Practice your typing
+# Sign out
 
-Click on your `typing.com` bookmark, and go through the exercises
+Before you leave, sign out of your Gmail account
+
+![Sign out of your Gmail  account](sign-out.png)
 
 ---
 # Homework assignment
 
-Send an email to cmaa1702@googlegroups.com
-
----
-# Another free computer class
-
-Register on March 2 or March 3
-
-Class runs from March 6 to May 3
-
-[More information](computer-classes-march-2017.pdf)
+- Go to `typing.com/student` and practice your typing
+- Sign in to your Gmail account
+- Sign out of your Gmail account
+- Send more emails
 
 ---
 # The End
