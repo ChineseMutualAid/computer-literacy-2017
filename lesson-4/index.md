@@ -25,4 +25,4 @@ Create a document about...
 ---
 # The End
 
-Yay! You completed the final lesson!
+Yay! You completed the course!
