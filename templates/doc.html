@@ -1,0 +1,13 @@
+<%inherit file='base.html'/>
+
+<%block name='title_block' filter='trim'>
+  ${doc.title}
+</%block>
+
+<div class='nav'>
+  <a href='${ROOT}'>Home</a>
+</div>
+
+<div class='slides'>
+${doc.get_lesson_html()}
+</div>

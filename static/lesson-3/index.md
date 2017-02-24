@@ -11,7 +11,7 @@
 ---
 # Join our mailing list, part 1
 
-Visit the page for the <a href='https://groups.google.com/d/forum/cmaa-computer-literacy-course' class='external'>CMAA Computer Literacy Course mail list</a>
+Visit the page for the <a href='https://groups.google.com/d/forum/cmaa-computer-literacy-course' class='external'>CMAA Computer Literacy Course mailing list</a>
 
 ---
 # Join our mailing list, part 2

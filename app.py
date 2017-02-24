@@ -19,7 +19,7 @@ def home():
 
 @app.route(site_root + 'links/')
 def links():
-    return render_template('links.html', doc='links/index.md')
+    return render_template('doc.html', doc=get_doc('links/index.md'))
 
 
 @app.route(site_root + 'lesson-<int:num>/')
