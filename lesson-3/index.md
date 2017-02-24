@@ -11,7 +11,7 @@
 ---
 # Join our mailing list, part 1
 
-Visit the page for the <a href='https://groups.google.com/d/forum/cmaa-computer-literacy-course' class='external'>CMAA Computer Literacy Course mail list</a>
+Visit the page for the <a href='https://groups.google.com/d/forum/cmaa-computer-literacy-course' class='external'>CMAA Computer Literacy Course mailing list</a>
 
 ---
 # Join our mailing list, part 2
@@ -32,7 +32,7 @@ Click on `Automatically subscribe me...` and then `Apply to join this group`
 
 Send an email to:
 
-`cmaa-computer-literacy-course@googlegroup.com`
+`cmaa-computer-literacy-course@googlegroups.com`
 
 Everyone subscribed to the mailing list will see your email!
 
