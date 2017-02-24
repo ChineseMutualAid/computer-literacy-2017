@@ -30,7 +30,8 @@ def lesson(num):
 
 @app.route(site_root + 'lesson-<int:num>/slides/')
 def slides(num):
-    return render_template('slides.html', doc=get_doc(num))
+    md_file = 'lesson-{}/index.md'.format(num)
+    return render_template('slides.html', doc=get_doc(md_file))
 
 
 @app.route(site_root + '<path:path>')
@@ -48,8 +49,8 @@ def get_build_urls():
 
     """
     with app.test_request_context():
-        yield url_for('home')
-        yield url_for('links')
+        for name in ('home', 'links'):
+            yield url_for(url)
         for i in range(1, 5):
             yield url_for('lesson', num=i)
             yield url_for('slides', num=i)

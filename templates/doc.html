@@ -4,10 +4,19 @@
   ${doc.title}
 </%block>
 
+<%block name='extrahead'>
+<style>
+  .content {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+  }
+</style>
+</%block>
+
 <div class='nav'>
   <a href='${ROOT}'>Home</a>
 </div>
 
-<div class='slides'>
+<div class='content'>
 ${doc.get_lesson_html()}
 </div>
