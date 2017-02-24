@@ -3,12 +3,19 @@
 [Chinese Mutual Aid Association](http://chinesemutualaid.org)
 
 ---
+# Announcements
+
+- another free computer class
+- links to all resources mentioned in this course
+- ninite.com
+
+---
 # Outline
 
+- Using Google search
+- Using Windows computers
 - Create Google doc
 - Share a Google doc
-- Convert a Google doc to a PDF file
-- Print a Google doc
 
 ---
 # Homework assignment

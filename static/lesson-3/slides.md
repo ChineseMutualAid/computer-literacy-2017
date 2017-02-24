@@ -32,7 +32,7 @@ Click on `Automatically subscribe me...` and then `Apply to join this group`
 
 Send an email to:
 
-`cmaa-computer-literacy-course@googlegroup.com`
+`cmaa-computer-literacy-course@googlegroups.com`
 
 Everyone subscribed to the mailing list will see your email!
 
@@ -51,7 +51,6 @@ Register on March 2 or March 3
 Class runs from March 6 to May 3
 
 [More information](computer-classes-march-2017.pdf)
-
 
 ---
 # The End

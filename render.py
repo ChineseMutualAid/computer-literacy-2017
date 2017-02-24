@@ -25,8 +25,8 @@ def render_template(template_file, **kwargs):
     return tmpl.render(**kwargs)
 
 
-def get_doc(num):
-    md_file = site_dir / ('lesson-%d/slides.md' % num)
+def get_doc(md_file):
+    md_file = site_dir / md_file
     return MarkdownDocument(md_file)
 
 
