@@ -16,6 +16,12 @@
 
 [Gmail](https://gmail.com) - Email from Google
 
+[Google Drive](https://drive.google.com) - Store and edit your documents online
+
+## Software
+
+[Ninite.com](https://ninite.com) - Easily install software on Windows. Probably the easiest way to install Google Chrome.
+
 ## Other
 
 [Mouse Exercises](http://www.seniornet.org/howto/mouseexercises/placemouse1.html)
