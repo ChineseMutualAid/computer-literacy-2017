@@ -50,7 +50,7 @@ def get_build_urls():
     """
     with app.test_request_context():
         for name in ('home', 'links'):
-            yield url_for(url)
+            yield url_for(name)
         for i in range(1, 5):
             yield url_for('lesson', num=i)
             yield url_for('slides', num=i)
